@@ -2,5 +2,8 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "PyHTTPChat-Client'
+
 [project.urls]
 Homepage = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"

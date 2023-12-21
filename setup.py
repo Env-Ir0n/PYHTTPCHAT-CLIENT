@@ -10,12 +10,8 @@ setup(
     install_requires = requirements,
     author = 'EnvIr0n',
     author_email = 'envir0n@proton.me',
-    url='GITHUB URL',
-    entry_points={
-        'console_scripts' : [
-            'runchatclient=serverclient.module:run'
-        ]
-    }
+    url='https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT.git',
+    
 
 
 )

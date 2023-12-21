@@ -5,7 +5,6 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "PyHTTPChat-Client"
 version = "0.01"
-author = "EnvIr0n"
 
 [project.urls]
 Homepage = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"

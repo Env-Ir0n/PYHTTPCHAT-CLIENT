@@ -11,7 +11,7 @@ setup(
     author = 'EnvIr0n',
     author_email = 'envir0n@proton.me',
     url='https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT.git',
-    
+    scripts= ['pychatclient.py']
 
 
 )

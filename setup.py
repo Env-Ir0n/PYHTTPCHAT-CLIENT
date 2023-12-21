@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setup(
     name = 'pyhttpchat-client',
-    version = 'ALPHA 0.1',
+    version = '0.01',
     packages = find_packages(),
     install_requires = requirements,
     author = 'EnvIr0n',

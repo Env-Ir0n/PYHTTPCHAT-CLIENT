@@ -1,13 +1,13 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "PyHTTPChat-Client"
 version = "0.01"
 
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project.dynamic]
 dependencies = ['requests>=2.31.0', 'python-gnupg==0.5.2', 'gnupg==2.3.1', 'setuptools_scm', 'wheel']
 
-[project.urls]
+[[project.urls]]
 Homepage = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"

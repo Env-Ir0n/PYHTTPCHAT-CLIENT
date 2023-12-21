@@ -1,6 +1,6 @@
 import requests
-import jsonhandler as json
-import encryptionservice as PGP
+import src.jsonhandler as json
+import src.encryptionservice as PGP
 
 def getmsg(serverip,authkey,publickey):
     headers = {

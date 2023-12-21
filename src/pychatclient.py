@@ -1,6 +1,6 @@
-from submodules import jsonhandler as json
-from submodules import messagehandler
-from submodules import secondinit as initII
+import jsonhandler as json
+import messagehandler
+import secondinit as initII
 import os
 
 if os.path.exists('init.txt'):

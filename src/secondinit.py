@@ -1,4 +1,4 @@
-import jsonhandler as json
+import src.jsonhandler as json
 
 def init():
     save = input('Save recent servers in a list? (Y/n)')

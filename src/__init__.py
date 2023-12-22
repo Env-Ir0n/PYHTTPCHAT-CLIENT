@@ -41,6 +41,3 @@ print('saving info...')
 with open('client.json') as f:
     jsondata = {'username':username}
     f.write(json.dumps(jsondata))
-
-print('Saved!')
-print('run: runchatclient   to run')

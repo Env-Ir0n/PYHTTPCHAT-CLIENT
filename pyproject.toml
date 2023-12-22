@@ -1,14 +1,48 @@
 [project]
-name = "PyHTTPChat-Client"
-version = "0.1.0"
+#install via:
+# $ pip install client-pyhttpchat
+# PyPI link:
+# https://pypi.org/project/client-pyhttpchat/
+
+name = "client-pyhttpchat" 
+version = "0.0.1a"  # Required
+description = "The client for EnvIr0n's pyhttpchatserver"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["HTPP", "chat", "chatclient"]
+authors = [
+  {name = "EnvIr0n", email = "envir0n@proton.me" }
+]
+
+maintainers = [
+  {name = "EnvIr0n", email = "envir0n@proton.me" }
+]
+
+classifiers = [  # Optional
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Chat Tools",
+  "License :: OSI Approved :: GPL v3.0",
+
+  # Specify the Python versions you support here. In particular, ensure
+  # that you indicate you support Python 3. These classifiers are *not*
+  # checked by "pip install". See instead "python_requires" below.
+  "Programming Language :: Python :: 3.7"
+]
+
+
+[project.urls]  # Optional
+"Homepage" = "envir0n.github.io/pyhttpchat/client"
+"Bug Reports" = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"
+"Funding" = "none"
+"Say Thanks!" = "none"
+"Source" = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"
+
+[project.scripts]
+pychat-run-client = "pychatclient:main"
+
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=43.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[project.dynamic]
-version = "0.1.0"
-dependencies = ['requests>=2.31.0', 'python-gnupg==0.5.2', 'gnupg==2.3.1', 'setuptools_scm', 'wheel']
-
-[project.urls]
-Homepage = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"

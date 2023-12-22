@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'PyHTTPChat-Client',
-    version = '0.01',
+    version = '0.0.1',
     packages = find_packages(),
     author = 'EnvIr0n',
     author_email = 'envir0n@proton.me',

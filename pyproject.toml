@@ -1,38 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "client-pyhttpchat"
-version = "0.0.1a"
-description = "The client for EnvIr0n's pyhttpchatserver"
+name = "pyhttpchatclient"
+authors = [
+    {name = "EnvIr0n", email = "envir0n@proton.me"},
+]
+description = "The official CLI client for PyHTTPChat"
 readme = "README.md"
 requires-python = ">=3.7"
+keywords = ["chat", "htpp","chatclient"]
 license = {file = "LICENSE"}
-keywords = ["HTPP", "chat", "chatclient"]
-
-authors = [
-  {name = "EnvIr0n", email = "envir0n@proton.me"}
-]
-
-maintainers = [
-  {name = "EnvIr0n", email = "envir0n@proton.me"}
-]
-
 classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Intended Audience :: Developers",
-  "Topic :: Software Development :: Chat Tools",
-  "License :: OSI Approved :: GPL v3.0",
-  "Programming Language :: Python :: 3.7"
+    "Programming Language :: Python :: 3"
 ]
-
-[project.urls]
-homepage = "https://envir0n.github.io/pyhttpchat/client"
-bug_reports = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"
-funding = "none"
-say_thanks = "none"
-source = "https://github.com/Env-Ir0n/PYHTTPCHAT-CLIENT"
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+    'python-gnupg',
+    'gnupg'
+]
+dynamic = ["0.0.1"]
 
 [project.scripts]
-pychat-run-client = "pychatclient:main"
-
-[build-system]
-requires = ["setuptools>=43.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+pyhttpchatclient = "pychatclient.module:main"

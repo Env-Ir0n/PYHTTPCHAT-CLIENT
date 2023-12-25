@@ -1,1 +1,27 @@
-#placeholder comment, do not attempt install
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhttpchatclient"
+authors = [
+    {name = "EnvIr0n", email = "envir0n@proton.me"},
+]
+description = "The official CLI client for PyHTTPChat"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["chat", "htpp","chatclient"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+    'python-gnupg',
+    'gnupg'
+]
+dynamic = ["0.0.1"]
+
+[project.scripts]
+pyhttpchatclient = "pychatclient.module:main"
